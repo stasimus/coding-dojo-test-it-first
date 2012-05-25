@@ -5,5 +5,8 @@
  */
 
 object ListPuzzleS {
-  def getSecondElementFromSecondElement[A](list: List[A]) = None
+  def getSecondElementFromSecondElement[A](list: List[A]) = list match {
+    case ss :: List(_, second, _*) :: _ => Some(second)
+    case _ => None
+  }
 }

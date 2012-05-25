@@ -1,4 +1,4 @@
 (ns puzzles)
 
 (defn sortListOfLists [ls]
-  nil)
+  (sort-by count ls))

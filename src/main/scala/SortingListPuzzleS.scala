@@ -5,5 +5,8 @@
  */
 
 object SortingListPuzzleS {
-  def sortListOfLists[A <: Any](list: List[List[A]]):List[List[A]] = Nil
+  def sortListOfLists[A <: Any](list: List[List[A]]) =
+    list sortWith {
+      _.length < _.length
+    }
 }

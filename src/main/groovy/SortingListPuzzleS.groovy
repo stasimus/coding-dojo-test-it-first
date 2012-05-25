@@ -6,6 +6,6 @@
  */
 class SortingListPuzzleG {
     static def sortListOfLists(list) {
-        null
+        list.sort()
     }
 }

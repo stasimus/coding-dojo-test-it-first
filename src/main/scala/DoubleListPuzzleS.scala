@@ -6,6 +6,10 @@
 
 object DoubleListPuzzleS {
   def doubleAll[A](list: List[A]) = {
-    Nil
+    val start = List[A]()
+
+    (list :\ start) {
+      (element, res) => element :: element :: res
+    }
   }
 }

@@ -5,5 +5,7 @@
  */
 
 object ListToMapPuzzleS {
-  def groupItemsBySize(list: List[String]) = Nil
+  def groupItemsBySize(list: List[String]) = {
+    list groupBy (_ size)
+  }
 }
